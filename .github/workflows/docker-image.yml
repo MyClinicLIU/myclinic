@@ -16,11 +16,11 @@ jobs:
       - name: Build and Push Docker images
         run: |
           docker build -t danikais/danikais:latest -f Dockerfile .
-          docker build -t danikais/mysql:latest -f Dockerfile.mysql .
+          //docker build -t danikais/mysql:latest -f Dockerfile.mysql .
           docker build -t danikais/php:latest -f Dockerfile.php .
           
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           
           docker push danikais/danikais:latest
-          docker push danikais/mysql:latest
+          //docker push danikais/mysql:latest
           docker push danikais/php:latest
