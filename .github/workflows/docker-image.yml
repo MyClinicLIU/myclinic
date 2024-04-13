@@ -25,5 +25,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push danikais/danikais:latest
+          docker push danikais/MCFE:latest
           
