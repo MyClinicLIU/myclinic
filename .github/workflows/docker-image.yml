@@ -15,7 +15,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t danikais/MCFE:latest -f Dockerfile .
+          docker build -t danikais/mcfe:latest -f Dockerfile .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -25,5 +25,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push danikais/MCFE:latest
+          docker push danikais/mcfe:latest
           
