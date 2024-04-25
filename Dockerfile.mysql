@@ -10,4 +10,4 @@ ENV MYSQL_USER=admin
 ENV MYSQL_PASSWORD=root
 
 # When container starts, execute the following SQL script
-COPY ./admin.sql /docker-entrypoint-initdb.d/
+COPY ./myclinic.sql.sql /docker-entrypoint-initdb.d/
