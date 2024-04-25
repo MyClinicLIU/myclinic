@@ -6,7 +6,7 @@ if(isset($_SESSION["valid_login"]) && $_SESSION["valid_login"]){
    header("Location: index.php");
 }
 
-$conn = mysqli_connect('localhost','root','','myclinic') or die('connection failed');
+include_once "db_connection.php";
 
 function val($data){
    $data = trim($data); // Will trim the data, removes any unnecessary spaces

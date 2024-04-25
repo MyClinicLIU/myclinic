@@ -6,7 +6,7 @@
       header("Location: index.php");
     }
 
-    $conn = mysqli_connect('localhost','root','','myclinic') or die('connection failed');
+    include_once "db_connection.php";
 
 
     $id = $_GET["id"];
