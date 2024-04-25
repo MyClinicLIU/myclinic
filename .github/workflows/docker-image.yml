@@ -18,7 +18,7 @@ jobs:
         run: echo "::set-output name=timestamp::$(date +%Y%m%d%H%M%S)"
 
       - name: Build App Docker image
-        run: docker build -t danikais/danikais:latest -f Dockerfile .
+        run: docker build -t danikais/mcfe:latest -f Dockerfile .
 
       - name: Build Database Docker image
         run: docker build -t danikais/mysql:latest -f Dockerfile.mysql .
@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push App Docker image
-        run: docker push danikais/danikais:latest
+        run: docker push danikais/mcfe:latest
 
       - name: Push Database Docker image
         run: docker push danikais/mysql:latest
