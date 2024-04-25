@@ -21,10 +21,10 @@ jobs:
         run: docker build -t danikais/mcfe:latest -f Dockerfile .
 
       - name: Build Database Docker image
-        run: docker build -t danikais/mysql:latest -f Dockerfile.mysql .
+        run: docker build -t danikais/mysqlmc:latest -f Dockerfile.mysql .
 
       - name: Build phpMyAdmin Docker image
-        run: docker build -t danikais/php:latest -f Dockerfile.php .
+        run: docker build -t danikais/phpmc:latest -f Dockerfile.php .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -36,7 +36,7 @@ jobs:
         run: docker push danikais/mcfe:latest
 
       - name: Push Database Docker image
-        run: docker push danikais/mysql:latest
+        run: docker push danikais/mysqlmc:latest
 
       - name: Push phpMyAdmin Docker image
-        run: docker push danikais/php:latest
+        run: docker push danikais/phpmc:latest
