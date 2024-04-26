@@ -2,7 +2,7 @@
 FROM phpmyadmin/phpmyadmin:latest
 
 # Set environment variables for MySQL connection
-ENV PMA_HOST= myclinic.sql
+ENV PMA_HOST= myclinic
 ENV PMA_USER=root
 ENV PMA_PASSWORD=root
 
