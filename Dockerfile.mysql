@@ -5,7 +5,7 @@ FROM mysql:latest
 ENV MYSQL_ROOT_PASSWORD=root
 
 # Create a database and user
-ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_DATABASE=myclinic.sql
 ENV MYSQL_USER=admin
 ENV MYSQL_PASSWORD=root
 
