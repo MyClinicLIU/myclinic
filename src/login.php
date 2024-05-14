@@ -6,7 +6,7 @@ if(isset($_SESSION["valid_login"]) && $_SESSION["valid_login"]){
    header("Location: index.php");
 }
 
-include_once "dbconnection.php";
+include_once "dbconnect.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])){
 
