@@ -6,7 +6,7 @@
       header("Location: index.php");
     }
 
-    include_once "db_connection.php";
+    include_once "dbconnect.php";
 
 
     $id = $_GET["id"];
