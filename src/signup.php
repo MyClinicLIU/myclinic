@@ -6,7 +6,7 @@ if(isset($_SESSION["valid_login"]) && $_SESSION["valid_login"]){
    header("Location: index.php");
 }
 
-include_once "db_connection.php";
+include_once "dbconnect.php";
 
 function val($data){
    $data = trim($data); // Will trim the data, removes any unnecessary spaces
