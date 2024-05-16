@@ -6,7 +6,7 @@ if(!isset($_SESSION["valid_login"]) || !$_SESSION["valid_login"] || $_SESSION["a
    header("Location: index.php");
 }
 
-include_once "db_connection.php";
+include_once "dbconnect.php";
 
 $users = mysqli_query($conn, "SELECT id, name, email_address, phone_number, verified FROM users WHERE account_type != 'admin'");
 
