@@ -3,7 +3,7 @@ FROM phpmyadmin/phpmyadmin:latest
 
 # Set environment variables for MySQL connection
 ENV PMA_HOST=db-service
-ENV PMA_USER=root
+ENV PMA_USER=admin
 ENV PMA_PASSWORD=root
 
 # The port phpMyAdmin will run on
