@@ -1,6 +1,6 @@
 <?php
 // Database configuration
-$servername = "db-service"; // Using the Kubernetes service name for the database
+$servername = "dani-db-service"; // Using the Kubernetes service name for the database
 $username = "admin"; // As defined in the StatefulSet
 $password = "root"; // As defined in the StatefulSet, consider using environment variables for production
 $dbname = "myclinic"; // As defined in the StatefulSet
